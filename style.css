@@ -1,45 +1,76 @@
 body{
   background-color: white;
+  margin: 0;
 }
 
-#mainBox{
+.topBar{
+  width: auto;
+  height: 140px;
+  background-color: rgba(2, 218, 110, 0.863);
+  margin: 0;
+  display: flex;
+  text-wrap: nowrap;
+  align-items: center;  
+}
+
+.topBarLinks {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.688);
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.topBarLinks:hover {
+  color: rgba(240, 248, 255, 0.821);
+  transition-duration: 0.1s;
+  transform: scale(1.02);
+}
+
+.mainHeader:first-child {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.przepis:nth-child(3n+1):last-child {
+  margin-left: 47px;
+  margin-right: auto;
+}
+.przepis:nth-child(3n+2):last-child {
+  margin-left: 0px;
+  margin-right: 451px;
+}
+.mainBox{
   
-  width: 1200px;
+  width: 1400px;
   height: auto;
   margin: auto;
-  background-color: rgba(8, 189, 8, 0.79);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   
 }
-#mainHeader{
+.mainHeader{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 100px;
-  color:aliceblue;
-  text-wrap: nowrap;
-  text-shadow: 3px 3px black;
+  font-size: 75px;
+  color:white;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.683);
+
 }
+
 a{
   text-decoration: none;
   color:inherit;
 }
 
-#search{
-  border-radius: 10px;
-  width:400px;
-  height: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
 .przepis {
   width:400px;
   height:300px;
-  background-color: aliceblue;
+  background-color: white;
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -54,7 +85,8 @@ a{
 .nazwaPrzepisu {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 40px;
-  color: black;
+  color: white;
+  text-shadow: 1px 1px rgb(0, 0, 0);
   margin-left: 10px;
   margin-top: 10px;
 
@@ -64,17 +96,17 @@ a{
   font-size: 20;
   margin-left: 10px;
   margin-right: 10px;
-  color: rgba(0, 0, 0, 0.659);
+  color: rgba(251, 249, 249, 0.659);
 }
 .sprawdz {
   width:140px;
   height:56px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 35px;
-  background-color: rgb(8, 189, 8);
-  color:aliceblue;
+  background-color: rgba(2, 218, 110, 0.863);
+  color:white;
   border-radius: 4px;
-  border: 2px solid aliceblue;
+  border: 2px solid rgba(2, 218, 110, 0.863);
   align-self: flex-end;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -85,11 +117,15 @@ a{
 }
 
 .sprawdz:hover {
-  background-color: aliceblue;
-  color: rgb(8, 189, 8);
-  border: 2px solid rgb(8, 189, 8);
+  background:inherit;
+  color: rgba(2, 218, 110, 0.863);
+  border: 2px solid rgba(2, 218, 110, 0.863);
 }
 
 .przepis:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+}
+
+#grzybowa {
+  background-image: url(grzybowa_poprawiona.jpg);
 }
