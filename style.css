@@ -1,6 +1,10 @@
+html {
+  max-height: 100%;
+}
 body{
   background-color: white;
   margin: 0;
+  height: auto;
 }
 
 .topBar{
@@ -27,7 +31,7 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 35px;
   color: white;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.688);
+  text-shadow: 6px 4px 7px rgba(23, 23, 24, 1);
   margin-left: 20px;
   margin-right: 20px;
   background: inherit;
@@ -63,11 +67,11 @@ body{
   font-size: calc(100% + 0.25em);
   margin-bottom: 15px;
   color: rgba(0, 0, 0, 0.655);
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.404);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.269);
 }
 .dropDownLink:hover{
   color: rgba(34, 33, 33, 0.24);
-  text-shadow: 1px 1px rgba(48, 47, 47, 0.084);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.225);
 }
 .dropDownLink:last-child {
   margin-bottom: 5px;
@@ -101,7 +105,7 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 75px;
   color:white;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.683);
+  text-shadow: 6px 4px 5px rgba(23, 23, 24, 1);
 
 }
 
@@ -129,7 +133,7 @@ a{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 40px;
   color: white;
-  text-shadow: 1px 1px rgb(0, 0, 0);
+  text-shadow: 6px 4px 5px rgb(0, 0, 0);
   margin-left: 10px;
   margin-top: 10px;
 
@@ -182,7 +186,7 @@ a{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 40px;
   color: white;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.688);
+  text-shadow: 6px 4px 5px rgba(23, 23, 24, 1);
 }
 
 #grzybowa {
@@ -196,15 +200,10 @@ a{
 }
 
 
-footer{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px;
-}
-
 ul{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   list-style-type: circle;
-
+  text-wrap: wrap;
 }
 li::marker{
   color: black;
@@ -213,5 +212,92 @@ li::marker{
 ol{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   list-style-type: circle;
-  
+  text-wrap: wrap;
+}
+
+.zdjecie1{
+  border-radius: 5%;
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+  box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.zdjecie1:hover {
+  transform: scale(1.018);
+}
+
+.mainSection{
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+
+#smacznego{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  color: rgb(2, 218, 110);
+  text-shadow: 4px 3px 4px rgb(16, 16, 16);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.tytul {
+  width: 100%;
+  height: auto;
+  margin-left: 10%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+  color: rgb(2, 218, 110);
+  text-shadow: 4px 3px 4px rgb(16, 16, 16);
+}
+
+.aside {
+  margin-top: 60px;
+  margin-left: 5%;
+  margin-right: 5%;
+  float:right;
+  width: 38%;
+  padding: 1%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caloscOpisu {
+  border-radius: 5px;
+  box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.opis {
+  margin-left: 15px;
+}
+.par {
+  margin-left: 25px;
+}
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+  color: rgb(2, 218, 110);
+  text-shadow: 4px 3px 4px rgb(16, 16, 16);
+}
+.mainSection h2 {
+  margin-left: 3%;
+}
+
+.mainSection:hover {
+  transform: scale(1.01);
+}
+.caloscOpisu:hover {
+  transform: scale(1.018);
 }
