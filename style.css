@@ -16,7 +16,6 @@ body{
 
 
 
-
 .topBar{
   width: auto;
   height: 140px;
@@ -25,16 +24,29 @@ body{
   box-shadow: 1px 1px 24px 9px rgba(0,0,0,0.4);
   display: flex;
   text-wrap: nowrap;
-  align-items: center;  
+  align-items: center;
+
 }
 
-#logo {
-  margin-left: auto;
+.logo{
+  width: 12rem;
+  height: 12rem;
+  margin-left: 0;
   margin-right: auto;
-  margin-top: 80px;
-  margin-bottom: 120px;
-  display: flex;
-  justify-content: center; 
+}
+.mainHeader{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 8rem;
+  color:rgb(2, 218, 110);
+  text-shadow: 6px 4px 5px rgba(23, 23, 24, 1);
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  margin-right: auto;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
 }
 
 .dropButtons {
@@ -86,50 +98,63 @@ body{
 .dropDownLink:last-child {
   margin-bottom: 5px;
 }
-.mainHeader:first-child {
-  margin-left: 20px;
-  margin-right: auto;
-}
 
-.przepis:nth-child(3n+1):last-child {
-  margin-left: 47px;
-  margin-right: auto;
-}
-.przepis:nth-child(3n+2):last-child {
-  margin-left: 0px;
-  margin-right: 451px;
-}
-.mainBox{
-  
-  width: 1400px;
-  height: auto;
-  margin: auto;
+
+/*   Tutaj CSS do searchbara   */
+
+
+
+
+.headerAndSearch {
+  width: auto;
+  height: 16rem;
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  
+  align-items: flex-end;
+  margin-bottom: 4rem;
 }
-.mainHeader{
+.searchbarstyle{
+  font-size: 2rem;
+  width: 26rem;
+  border-radius: 8px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 75px;
-  color:white;
-  text-shadow: 6px 4px 5px rgba(23, 23, 24, 1);
-
+  box-shadow: 3px 4px 25px 0px rgba(121, 113, 113, 1);
+  border: 2px solid rgba(54, 54, 54, 0.823) ;
+  margin-right: 5rem;
+  margin-bottom: 4rem;
 }
 
-a{
-  text-decoration: none;
-  color:inherit;
+
+/*   Tutaj CSS do gridu   */
+
+
+
+.mainBox{
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, 500px);
+  grid-auto-rows: auto;
 }
+
+
+
+
+
+/*   Tutaj CSS do kafelka z przepisem   */
+
+
+
+
 
 .przepis {
-  width:400px;
-  height:300px;
+  width: 500px;
+  height: 350px;
   background-color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
   border-radius: 4px;
   border: 2px solid black;
   display: flex;
@@ -137,7 +162,7 @@ a{
   flex-wrap: wrap;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
-
+  box-shadow: 3px 4px 25px 0px rgba(121, 113, 113, 1);
 }
 .nazwaPrzepisu {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -150,7 +175,7 @@ a{
 }
 .opisPrzepisu {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20;
+  font-size: 18px;
   margin-left: 10px;
   margin-right: 10px;
   color: rgba(251, 249, 249, 0.659);
@@ -183,6 +208,10 @@ a{
   transform: scale(1.02);
 }
 
+
+
+
+
 .indexfooter {
   margin-bottom: 0;
   margin-top: 120px;
@@ -201,13 +230,12 @@ a{
 
 #grzybowa {
   background-image: url(grzybowa_poprawiona.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
-#logoStrony {
-  width: auto;
-  height: auto;
 
-}
+
 
 
 
@@ -223,26 +251,46 @@ a{
 
 
 
-
-
-.przepisBox {
-  margin-left: 2%;
-  margin-right: 2%;
-  display: flex;
-  justify-content: space-evenly;
+.empty1{
+  width: 100%;
+  height: 10px;
 }
 
-ul{
+.przepisBox {
+  margin: 3rem;
+  margin-bottom: 5rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 50% 50%;
+  grid-auto-rows: auto auto 80px;
+  grid-template-areas: 
+  "mainSection caloscOpisu"
+  "mainSection zdj"
+  "mainSection but";
+}
+.mainSection ul li{
+  text-wrap: wrap;
+}
+.mainSection ol li{
+  text-wrap: wrap;
+}
+.mainSection ul{
+  width: 80%;
+  height: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 28px;
   list-style-type: circle;
   text-wrap: wrap;
 }
-li::marker{
+.mainSection li::marker{
   color: black;
+  width: 10%;
 }
 
-ol{
+.mainSection ol{
+  width: 75%;
+  height: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 28px;
   list-style-type: circle;
@@ -259,9 +307,9 @@ ol{
   border-radius: 15px;
   width: 100%;
   height: auto;
-  margin-bottom: 150px;
   box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
   transition: all 0.2s ease-in-out;
+  grid-area: zdj;
 }
 
 .zdjecie1:hover {
@@ -274,66 +322,43 @@ ol{
 
 
 .mainSection{
-  margin-top: 40px;
-  margin-right: 2%;
-  margin-left: 2%;
-  width: auto;
-  padding: 10px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease-in-out;
+  grid-area: mainSection;
 }
 
 #smacznego{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   color: rgb(2, 218, 110);
   text-shadow: 4px 3px 4px rgb(16, 16, 16);
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 2rem;
 }
 
 .tytul {
-  width: 100%;
   height: auto;
-  margin-left: 10%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 45px;
+  font-size: 38px;
   color: rgb(2, 218, 110);
   text-shadow: 4px 3px 4px rgb(16, 16, 16);
+  margin-left: 2rem;
 }
-
-
-
-
-/*   Tutaj CSS do całego boxa po prawej   */
-
-
-.aside {
-  margin-top: 60px;
-  margin-right: 2%;
-  margin-left: 2%;
-  width: auto;
-  padding: 10px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
 
 
 /*   Tutaj CSS do opisu przepisu   */
 
 
 .caloscOpisu {
+  height: 100%;
   border-radius: 10px;
   box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
   transition: all 0.2s ease-in-out;
+  grid-area: caloscOpisu;
 }
 
 .opis {
@@ -342,17 +367,19 @@ ol{
 .par {
   margin-left: 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+  text-wrap: wrap;
   color: rgba(0, 0, 0, 0.696);
 }
 h2 {
+  margin-left: 3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   color: rgb(2, 218, 110);
   text-shadow: 4px 3px 4px rgb(16, 16, 16);
 }
 .mainSection h2 {
-  margin-left: 3%;
+  margin-left: 1rem;
 }
 
 .mainSection:hover {
@@ -365,18 +392,234 @@ h2 {
 
 
 
-
 /*   Tutaj CSS przycisku powrót po prawej   */
 
 
-.aside .sprawdz {
-  width: 270px;
-  height: 120px;
+.przepisBox .sprawdz {
+  width: 260px;
+  height: 100px;
   font-size: 75px;
   box-shadow: 5px 5px 25px 0px rgba(121, 113, 113, 1);
   text-shadow: 2px 2px 4px rgb(16, 16, 16);
   margin: 0;
+  margin-left: auto;
+  grid-area: but;
 }
-.aside .sprawdz:hover {
+.przepisBox .sprawdz:hover {
   text-shadow: 2px 2px 4px rgba(2, 218, 110, 0.714);
+}
+
+
+
+
+
+
+/*   Tutaj CSS do telefonu od 1150px i mniej  */
+
+
+@media only screen and (max-width: 1150px) {
+  .mainHeader{
+    margin: 0;
+
+  }
+  .searchbarstyle{
+    margin: 0;
+  }
+  .headerAndSearch{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  @media only screen and (max-width: 992px) {
+
+    .mainBox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @media only screen and (max-width: 700px) {
+      .topBar{
+        height: 50px;
+      }
+      .logo{
+        width: 3rem;
+        height: 3rem;
+        margin-left: 0;
+        margin-right: auto;
+      }
+      .headerAndSearch{
+        height: 160px;
+        margin-bottom: 0;
+      }
+      .mainHeader{
+        font-size: 2.5rem;
+      }
+      .searchbarstyle{
+        width: 16rem;
+        height: 1rem;
+        font-size: 1rem;
+      }
+      .dropButtons {
+        font-size: 18px;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .dropMenu{
+        right: 4px;
+        left: auto;
+      }
+      .dropDownLink{
+        display: block;
+        font-size: 10px;
+        margin-bottom: 15px;
+
+      }
+      .mainBox {
+        margin: 1rem;
+      }
+      .przepis {
+        width: 280px;
+        height: 230px;
+      }
+      .nazwaPrzepisu {
+        font-size: 28px;
+        margin-left: 10px;
+        margin-top: 10px;
+      
+      }
+      .opisPrzepisu {
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .sprawdz {
+        width:100px;
+        height:38px;
+        font-size: 25px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
+        /*        template         */
+
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  h2 {
+    font-size: 30px;
+  }
+  .tytul{
+    font-size: 28px;
+    margin-left: 1.5rem;
+  }
+
+  .mainSection ul{
+    font-size: 18px;
+
+  }
+  .mainSection ol{
+    font-size: 18px;
+  }
+  .par{
+    font-size: 16px;
+  }
+  .przepisBox .sprawdz {
+    width: 180px;
+    height:80px;
+    font-size: 52px;
+  }
+  #smacznego{
+    font-size: 48px;
+    margin-left: 1.5rem;
+  }
+  @media only screen and (max-width: 1100px) {
+    
+    .przepisBox {
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto auto auto 80px;
+      grid-template-areas: 
+      "caloscOpisu"
+      "zdj"
+      "mainSection"
+      "but";
+    }
+    
+    
+    h2 {
+      font-size: 50px;
+    }
+    .tytul{
+      font-size: 45px;
+      margin-left: 1.5rem;
+    }
+  
+    .mainSection ul{
+      font-size: 26px;
+  
+    }
+    .mainSection ol{
+      font-size: 26px;
+    }
+    .par{
+      font-size: 22px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .przepisBox .sprawdz {
+      width: 200px;
+      height:100px;
+      font-size: 58px;
+      margin-top: 0;
+      margin-bottom: auto;
+    }
+    #smacznego{
+      font-size: 70px;
+      margin-left: 1.5rem;
+    }
+    @media only screen and (max-width: 700px) {
+      .przepisBox{
+        margin: 1rem;
+        gap: 1rem;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      .tytul{
+        font-size: 16px;
+        margin-left: 1rem;
+      }
+    
+      .mainSection ul{
+        width: 80%;
+        font-size: 10px;
+        margin-left: 0.5rem;
+      }
+      .mainSection ol{
+        width: 80%;
+        font-size: 10px;
+        margin-left: 0.5rem;
+      }
+      .par{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 10px;
+      }
+      .przepisBox .sprawdz {
+        width: 80px;
+        height:40px;
+        font-size: 20px;
+      }
+      #smacznego{
+        font-size: 32px;
+        margin-left: 1rem;
+      }
+    }
+  }
 }
