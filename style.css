@@ -269,13 +269,13 @@ a{
   "mainSection zdj"
   "mainSection but";
 }
-.mainSection ul li{
+.mainSection .unorderedList .listElement{
   text-wrap: wrap;
 }
-.mainSection ol li{
+.mainSection .orderedList .listElement{
   text-wrap: wrap;
 }
-.mainSection ul{
+.mainSection .unorderedList{
   width: 80%;
   height: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -283,12 +283,12 @@ a{
   list-style-type: circle;
   text-wrap: wrap;
 }
-.mainSection li::marker{
+.mainSection .listElement::marker{
   color: black;
   width: 10%;
 }
 
-.mainSection ol{
+.mainSection .orderedList{
   width: 75%;
   height: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -520,7 +520,7 @@ h2 {
     margin-left: 1.5rem;
   }
 
-  .mainSection ul{
+  .mainSection .unorderedList{
     font-size: 18px;
 
   }
@@ -560,11 +560,11 @@ h2 {
       margin-left: 1.5rem;
     }
   
-    .mainSection ul{
+    .mainSection .unorderedList{
       font-size: 26px;
   
     }
-    .mainSection ol{
+    .mainSection .orderedList{
       font-size: 26px;
     }
     .par{
@@ -596,12 +596,12 @@ h2 {
         margin-left: 1rem;
       }
     
-      .mainSection ul{
+      .mainSection .unorderedList{
         width: 80%;
         font-size: 10px;
         margin-left: 0.5rem;
       }
-      .mainSection ol{
+      .mainSection .orderedList{
         width: 80%;
         font-size: 10px;
         margin-left: 0.5rem;
