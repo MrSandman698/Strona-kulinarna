@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gotuj z Bartnikiem</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="dodajPrzepisStyle.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class = "topBar">
+      <img class = "logo" src="garnek.png">
+    
+      <div class = "dropDown">
+        <button class = "dropButtons">O nas</button>
+        <div class = "dropMenu">
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+        </div>
+      </div>
+    
+      <div class = "dropDown">
+        <button class = "dropButtons" id = "kat">Kategorie</button>
+        <div class = "dropMenu">
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+        </div>
+      </div>
+    
+      <div class = "dropDown">
+        <button class = "dropButtons">Kontakt</button>
+        <div class = "dropMenu">
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+          <a href = "#" class = "dropDownLink">information</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="formContainer">
+      <header class = "formHeader">Dodaj swój przepis</header>
+      <div class="inputField">
+        <input type="text" id = "nazwa-przepisu" required>
+        <label for="nazwa-przepisu">Nazwa przepisu</label>
+      </div>
+      <div class="inputField">
+        <textarea type="text" id = "krotki-opis" rows="4" required></textarea>
+        <label for="krotki-opis">Krótki opis przepisu</label>
+      </div>
+      <div class="inputField">
+        <textarea type="text" id = "dlugi-opis" rows="8" required></textarea>
+        <label for="dlugi-opis">Pełny opis przepisu</label>
+      </div>
+      <div class="inputField">
+        <textarea type="img" id = "zdj-przepisu" required></textarea>
+        <label for="zdj-przepisu">Zdjęcie przepisu</label>
+      </div>
+      <div class="inputField">
+        <textarea type="text" id = "skladniki" rows="12" required></textarea>
+        <label for="skladniki">Potrzebne składniki (z ilością)</label>
+      </div>
+      <div class="inputField">
+        <textarea type="text" id = "kroki" rows="12" required></textarea>
+        <label for="kroki">Przepis krok po kroku</label>
+      </div>
+    </form>
+
+  </body>
+
+</html>
