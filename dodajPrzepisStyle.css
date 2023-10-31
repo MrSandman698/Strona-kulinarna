@@ -53,8 +53,8 @@ input[type="file"]{
   display: none;
   cursor: pointer;
 }
-#polezdj{
-  width: 522px;
+#polezdj {
+  width: 520px;
   height: 80px;
   box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
   border-radius: 5px;
@@ -145,6 +145,10 @@ textarea:valid~label{
   textarea:valid~label{
     top: -26px;
   }
+  #polezdj{
+    width: 330px;
+    height: 60px;
+  }
   .przeslij {
     width: auto;
     height: 70px;
@@ -164,11 +168,14 @@ textarea:valid~label{
     .formHeader{
       font-size: 1.5rem;
     }
-    
+    #polezdj{
+      width: 250px;
+      height: 60px;
+    }
     input,textarea {
       width: 240px;
       padding: 5px;
-      font-size: 10px;
+      font-size: 8px;
     }
     label{
       height: 14px;
