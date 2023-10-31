@@ -42,12 +42,30 @@
 }
 .inputField{
   position: relative;
+  
 }
 
 #nazwa-przepisu {
   height: 35px;
 }
 
+input[type="file"]{
+  display: none;
+  cursor: pointer;
+}
+#polezdj{
+  width: 522px;
+  height: 80px;
+  box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
+  border-radius: 5px;
+  border: 1px solid rgba(74, 74, 74, 0.55);
+  transition: all 0.3s ease-in-out;
+}
+label[for="zdj-przepisu"]{
+  cursor: pointer;
+  width: 96.5%;
+  height: 77%;
+}
 input,textarea {
   width: 500px;
   padding: 10px;
@@ -60,9 +78,9 @@ input,textarea {
   cursor: text;
 }
 
-
 input:hover,
-textarea:hover {
+textarea:hover,
+#polezdj:hover {
   transform: scale(1.03);
 }
 
@@ -89,7 +107,15 @@ textarea:valid~label{
   top: -46px;
 }
 
-
+#zdj-przepisu:valid{
+  display: inline;
+  transition: none;
+  border: 0;
+  box-shadow: none;
+}
+#zdj-przepisu:hover{
+  transform: none;
+}
 
 
 @media only screen and (max-width: 700px) {
