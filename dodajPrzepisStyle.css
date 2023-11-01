@@ -3,13 +3,14 @@
 
 .formHeader{
   font-size: 4rem;
+  font-weight: bold;
 }
 
 .formContainer {
   margin: 3rem;
   padding: 1rem;
   width: auto;
-  min-height: 1400px;
+  min-height: 1800px;
   height: auto;
   border-radius: 10px;
   box-shadow: 8px 8px 25px 0px rgba(121, 113, 113, 1);
@@ -97,13 +98,13 @@
 }
 
 
-.inputField input:focus~label,
-.inputField input:valid~label{
+.inputField input:focus~ label,
+.inputField input:valid~ label{
   top: -46px;
 }
 
-.inputField textarea:focus~label,
-.inputField textarea:valid~label{
+.inputField textarea:focus~ label,
+.inputField textarea:valid~ label{
   top: -46px;
 }
 
@@ -118,10 +119,110 @@
 }
 
 
+
+
+
+/*        css do checkboxa              */
+
+
+
+
+.radiobox{
+  font-weight: bold;
+
+}
+.radiobox label{
+  position: relative;
+  cursor: pointer;
+}
+
+p.header{
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin-bottom: 2.5rem;
+  text-align:center;
+}
+.container {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 25%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+  transform: scale(1.1);
+}
+
+.container input:checked ~ .checkmark {
+  background-color: rgba(2, 218, 110, 0.863);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  background: white;
+
+}
+
+
 @media only screen and (max-width: 700px) {
   
+
+  p.header{
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+  .container{
+    font-size: 0.75rem;
+  }
+  .checkmark{
+    height: 15px;
+    width: 15px;
+  }
+
   .formContainer{
     min-height: 800px;
+    margin: 2rem;
+  }
+  .formHeader{
+    font-size: 1.5rem;
+  }
+
+  .formContainer{
+    min-height: 1200px;
     margin: 2rem;
   }
   .formHeader{
@@ -136,14 +237,14 @@
     height: 14px;
     font-size: 10px;
   }
-  .inputField input:focus~.inputField label,
-  .inputField input:valid~.inputField label{
-    top: -26px;
+  .inputField input:focus~ label,
+  .inputField input:valid~ label{
+    top: -30px;
   }
 
-  .inputField textarea:focus~.inputField label,
-  .inputField textarea:valid~.inputField label{
-    top: -26px;
+  .inputField textarea:focus~ label,
+  .inputField textarea:valid~ label{
+    top: -30px;
   }
   #polezdj{
     width: 330px;
@@ -162,7 +263,7 @@
   @media only screen and (max-width: 450px) {
   
     .formContainer{
-      min-height: 800px;
+      min-height: 1000px;
       margin: 1rem;
     }
     .formHeader{
@@ -181,9 +282,9 @@
       height: 14px;
       font-size: 10px;
     }
-    .inputField input:focus~.inputField label,
-    .inputField input:valid~.inputField label{
-      top: -26px;
+    .inputField input:focus~ label,
+    .inputField input:valid~ label{
+      top: -28px;
     }
     .przeslij {
       width: auto;
@@ -195,10 +296,12 @@
       width: 120px;
       height: 50px;
     }
-    .inputField textarea:focus~.inputField label,
-    .inputField textarea:valid~.inputField label{
-      top: -26px;
+    .inputField textarea:focus~ label,
+    .inputField textarea:valid~ label{
+      top: -28px;
     }
-  
+    .container {
+      font-size: 0.7rem;
+    }
   }
 }

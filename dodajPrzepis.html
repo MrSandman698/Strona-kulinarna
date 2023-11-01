@@ -46,6 +46,21 @@
 
     <form class="formContainer">
       <header class = "formHeader">Dodaj swój przepis</header>
+      <div class= "radiobox">
+        <p class="header">Kategoria</p>
+        <label class="container">Danie Główne
+          <input type="radio" checked="checked" id="danie_glowne" name="kategoria">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Zupa
+          <input type="radio" name="kategoria" value="Zupa">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Deser
+          <input type="radio" id="deser" name="kategoria">
+          <span class="checkmark"></span>
+        </label>
+      </div>
       <div class="inputField">
         <input type="text" id = "nazwa-przepisu" name="nazwa-przepisu" required>
         <label for="nazwa-przepisu">Nazwa przepisu</label>
