@@ -47,27 +47,27 @@
     <form class="formContainer">
       <header class = "formHeader">Dodaj swój przepis</header>
       <div class="inputField">
-        <input type="text" id = "nazwa-przepisu" required>
+        <input type="text" id = "nazwa-przepisu" name="nazwa-przepisu" required>
         <label for="nazwa-przepisu">Nazwa przepisu</label>
       </div>
       <div class="inputField">
-        <textarea type="text" id = "krotki-opis" rows="4" required></textarea>
+        <textarea type="text" id = "krotki-opis" name="krotki-opis" rows="4" required></textarea>
         <label for="krotki-opis">Krótki opis przepisu</label>
       </div>
       <div class="inputField">
-        <textarea type="text" id = "dlugi-opis" rows="8" required></textarea>
+        <textarea type="text" id = "dlugi-opis" name="dlugi-opis" rows="8" required></textarea>
         <label for="dlugi-opis">Pełny opis przepisu</label>
       </div>
       <div class="inputField" id = "polezdj">
-        <input type="file" id = "zdj-przepisu" accept="image/*" required>
+        <input type="file" id = "zdj-przepisu" name="zdj-przepisu" accept="image/*" required>
         <label for="zdj-przepisu">Zdjęcie przepisu</label>
       </div>
       <div class="inputField">
-        <textarea type="text" id = "skladniki" rows="12" required></textarea>
+        <textarea type="text" id = "skladniki" name="skladniki" rows="12" required></textarea>
         <label for="skladniki">Potrzebne składniki (z ilością)</label>
       </div>
       <div class="inputField">
-        <textarea type="text" id = "kroki" rows="12" required></textarea>
+        <textarea type="text" id = "kroki" name="kroki" rows="12" required></textarea>
         <label for="kroki">Przepis krok po kroku</label>
       </div>
     </form>
