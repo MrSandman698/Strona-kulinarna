@@ -49,7 +49,7 @@
   height: 35px;
 }
 
-input[type="file"]{
+.inputField input[type="file"]{
   display: none;
   cursor: pointer;
 }
@@ -61,12 +61,12 @@ input[type="file"]{
   border: 1px solid rgba(74, 74, 74, 0.55);
   transition: all 0.3s ease-in-out;
 }
-label[for="zdj-przepisu"]{
+.inputField label[for="zdj-przepisu"]{
   cursor: pointer;
   width: 96.5%;
   height: 77%;
 }
-input,textarea {
+.inputField input,.inputField textarea {
   width: 500px;
   padding: 10px;
   outline: 0;
@@ -78,13 +78,13 @@ input,textarea {
   cursor: text;
 }
 
-input:hover,
-textarea:hover,
+.inputField input:hover,
+.inputField textarea:hover,
 #polezdj:hover {
   transform: scale(1.03);
 }
 
-label{
+.inputField label{
   position: absolute;
   height: 30px;
   left: 0;
@@ -97,13 +97,13 @@ label{
 }
 
 
-input:focus~label,
-input:valid~label{
+.inputField input:focus~label,
+.inputField input:valid~label{
   top: -46px;
 }
 
-textarea:focus~label,
-textarea:valid~label{
+.inputField textarea:focus~label,
+.inputField textarea:valid~label{
   top: -46px;
 }
 
@@ -127,22 +127,22 @@ textarea:valid~label{
   .formHeader{
     font-size: 1.5rem;
   }
-  input,textarea {
+  .inputField input,.inputField textarea {
     width: 320px;
     padding: 5px;
     font-size: 10px;
   }
-  label{
+  .inputField label{
     height: 14px;
     font-size: 10px;
   }
-  input:focus~label,
-  input:valid~label{
+  .inputField input:focus~.inputField label,
+  .inputField input:valid~.inputField label{
     top: -26px;
   }
 
-  textarea:focus~label,
-  textarea:valid~label{
+  .inputField textarea:focus~.inputField label,
+  .inputField textarea:valid~.inputField label{
     top: -26px;
   }
   #polezdj{
@@ -172,17 +172,17 @@ textarea:valid~label{
       width: 250px;
       height: 60px;
     }
-    input,textarea {
+    .inputField input,.inputField textarea {
       width: 240px;
       padding: 5px;
       font-size: 8px;
     }
-    label{
+    .inputField label{
       height: 14px;
       font-size: 10px;
     }
-    input:focus~label,
-    input:valid~label{
+    .inputField input:focus~.inputField label,
+    .inputField input:valid~.inputField label{
       top: -26px;
     }
     .przeslij {
@@ -195,8 +195,8 @@ textarea:valid~label{
       width: 120px;
       height: 50px;
     }
-    textarea:focus~label,
-    textarea:valid~label{
+    .inputField textarea:focus~.inputField label,
+    .inputField textarea:valid~.inputField label{
       top: -26px;
     }
   
