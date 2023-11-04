@@ -1,3 +1,9 @@
+<?php
+  session_start();
+
+  require_once 'database.php';
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -44,20 +50,20 @@
       </div>
     </div>
 
-    <form class="formContainer">
+    <form class="formContainer" method="POST" enctype="multipart/form-data" action="addInfo.php">
       <header class = "formHeader">Dodaj swój przepis</header>
       <div class= "radiobox">
         <p class="header">Kategoria</p>
         <label class="container">Danie Główne
-          <input type="radio" checked="checked" id="danie_glowne" name="kategoria">
+          <input type="radio" checked="checked" id="danie_glowne" name="kategoria" value="1">
           <span class="checkmark"></span>
         </label>
         <label class="container">Zupa
-          <input type="radio" name="kategoria" value="Zupa">
+          <input type="radio" name="kategoria" value="2">
           <span class="checkmark"></span>
         </label>
         <label class="container">Deser
-          <input type="radio" id="deser" name="kategoria">
+          <input type="radio" id="deser" name="kategoria" value="3">
           <span class="checkmark"></span>
         </label>
       </div>
@@ -85,11 +91,11 @@
         <textarea type="text" id = "kroki" name="kroki" rows="12" required></textarea>
         <label for="kroki">Przepis krok po kroku</label>
       </div>
-    </form>
-    <div class="przeslij">
-      <button class = "sprawdz" ><a href = "index.html">Powrót</a></button>
-      <button class = "sprawdz"><a href = "index.html">Prześlij</a></button>
-    </div>
+      <div class="przeslij">
+        <button class = "sprawdz" ><a href = "index.html">Powrót</a></button>
+        <button class = "sprawdz" type = "submit" name = "submit" ><a href = "addInfo.php">Prześlij</a></button>
+      </div>
+     </form>
   </body>
 
 </html>

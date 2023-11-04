@@ -1,0 +1,9 @@
+freemysqlhosting.net
+login: kijoyic688@jucatyo.com
+password: kijoyic688@jucatyo.com
+Server: sql11.freemysqlhosting.net
+Name: sql11659145
+Username: sql11659145
+Password: 1bk3Pt69ML
+Port number: 3306
+Account number is: 831106
