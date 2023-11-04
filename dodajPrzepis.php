@@ -94,7 +94,7 @@
       </div>
       <div class="przeslij">
         <button class = "sprawdz" ><a href = "index.html">Powrót</a></button>
-        <button class = "sprawdz" type = "submit" name = "submit" ><a href = "addInfo.php">Prześlij</a></button>
+        <button class = "sprawdz" type = "submit" name = "submit" >Prześlij</button>
       </div>
      </form>
   </body>
