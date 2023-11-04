@@ -17,3 +17,4 @@ ALTER TABLE `przepisy`
   ADD PRIMARY KEY (`id`);
 ALTER TABLE `przepisy`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
+  
