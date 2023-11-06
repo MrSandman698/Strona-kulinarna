@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Gotuj z Bartnikiem</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   </head>
 
@@ -69,7 +70,7 @@
         echo "<div class = 'przepis' style= 'background-image: url({$przepis['img']}); background-size: 100% 100%; background-repeat: no-repeat;' >";
         echo "<header class = 'nazwaPrzepisu'>{$przepis['nazwa']}</header>";
         echo "<p class = 'opisPrzepisu'>{$przepis['shortopis']}</p>";
-        echo "<button class = 'sprawdz'><a>Sprawdź</a></button>";
+        echo '<button class = "sprawdz"><a href="template.php?id='.$przepis['id'].'">Sprawdź</a></button>';
         echo "</div>";
         }
         
