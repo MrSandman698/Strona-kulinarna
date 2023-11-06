@@ -13,7 +13,7 @@
     $skladniki = $_POST['skladniki'];
     $krokPoKroku = $_POST['kroki'];
     
-    $target = "images/".time().rand(1,100).time().rand(1,100).$zdjPrzepisu;
+    $target = "images/".time().rand(1,100).time().rand(1,100).end((explode(".", $zdjPrzepisu)));;
 	
 	if(move_uploaded_file($_FILES['zdj-przepisu']['tmp_name'], $target)){
 		
