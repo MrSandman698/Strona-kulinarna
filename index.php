@@ -3,7 +3,11 @@
 
   require_once 'database.php';
 
-  $got = $db->query("SELECT * FROM przepisy");
+  if(isset($_GET['kategoria'])){
+    $got = $db->query("SELECT * FROM przepisy WHERE kategoria = '".$_GET['kategoria']."' ORDER BY data DESC");
+  } else {
+    $got = $db->query("SELECT * FROM przepisy ORDER BY data DESC");
+  }
 	$all = $got->fetchAll();
 
 
