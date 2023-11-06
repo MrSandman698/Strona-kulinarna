@@ -104,7 +104,7 @@
 ?>
       </div>
       <img class="zdjecie1" src="<?= $img ?>" alt="zdjęcie potrawy">
-      <button class = 'sprawdz'><a href = "index.html">Powrót</a></button>
+      <button class = 'sprawdz'><a href = "index.php">Powrót</a></button>
   </div>
   <div class="empty1"></div>
 </body>
