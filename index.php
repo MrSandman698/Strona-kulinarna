@@ -4,9 +4,9 @@
   require_once 'database.php';
 
   if(isset($_GET['kategoria'])){
-    $got = $db->query("SELECT * FROM przepisy WHERE kategoria = '".$_GET['kategoria']."' ORDER BY data DESC");
+    $got = $db->query("SELECT * FROM przepisy WHERE kategoria = '".$_GET['kategoria']."' ORDER BY id DESC");
   } else {
-    $got = $db->query("SELECT * FROM przepisy ORDER BY data DESC");
+    $got = $db->query("SELECT * FROM przepisy ORDER BY id DESC");
   }
 	$all = $got->fetchAll();
 
