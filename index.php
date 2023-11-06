@@ -27,7 +27,7 @@
   <body>
     
   <div class = "topBar">
-    <img class = "logo" src="garnek.png">
+   <a class = "logoImg" href="index.php"><img class = "logo" src="garnek.png" ></a>
   
     <div class = "dropDown">
       <button class = "dropButtons">O nas</button>
@@ -48,7 +48,7 @@
   </div>
     
     <div class="headerAndSearch">
-      <header class = 'mainHeader'>Garnek.pl</header>
+      <header class = 'mainHeader'><a href="index.php">Garnek.pl</a></header>
       <input class = "searchbarstyle" type="text" placeholder="Search...">
     </div>
     

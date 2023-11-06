@@ -18,7 +18,7 @@
 
   <body>
   <div class = "topBar">
-    <img class = "logo" src="garnek.png">
+   <a class = "logoImg" href="index.php"><img class = "logo" src="garnek.png" ></a>
   
     <div class = "dropDown">
       <button class = "dropButtons">O nas</button>
@@ -27,9 +27,9 @@
     <div class = "dropDown">
       <button class = "dropButtons" id = "kat">Kategorie</button>
       <div class = "dropMenu">
-        <a href = "?kategoria=1" class = "dropDownLink">Danie Główne</a>
-        <a href = "?kategoria=2" class = "dropDownLink">Zupa</a>
-        <a href = "?kategoria=3" class = "dropDownLink">Deser</a>
+        <a href = "index.php?kategoria=1" class = "dropDownLink">Danie Główne</a>
+        <a href = "index.php?kategoria=2" class = "dropDownLink">Zupa</a>
+        <a href = "index.php?kategoria=3" class = "dropDownLink">Deser</a>
       </div>
     </div>
   
