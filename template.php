@@ -53,9 +53,9 @@
     <div class = "dropDown">
       <button class = "dropButtons" id = "kat">Kategorie</button>
       <div class = "dropMenu">
-        <a href = "#" class = "dropDownLink">Danie Główne</a>
-        <a href = "#" class = "dropDownLink">Zupa</a>
-        <a href = "#" class = "dropDownLink">Deser</a>
+        <a href = "?kategoria=1" class = "dropDownLink">Danie Główne</a>
+        <a href = "?kategoria=2" class = "dropDownLink">Zupa</a>
+        <a href = "?kategoria=3" class = "dropDownLink">Deser</a>
       </div>
     </div>
   
