@@ -8,7 +8,7 @@
 <html>
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
     <title>Gotuj z Bartnikiem</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -97,6 +97,7 @@
         <button class = "sprawdz" type = "submit" name = "submit" >Prześlij</button>
       </div>
      </form>
+     <div class="empty1"></div>
   </body>
 
 </html>

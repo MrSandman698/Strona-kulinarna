@@ -25,7 +25,6 @@
           $shortopis = $wynik['shortopis'];
           $img = $wynik['img'];
           $vegan = $wynik['vegan'];
-
           
           $rezultat->free_result();
           $polaczenie->close();
@@ -37,7 +36,7 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width">
   <title>Gotuj z Bartnikiem</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
@@ -81,19 +80,17 @@
   <div class = "przepisBox">   
     <section class="mainSection">
 <?php
-    echo '<header class="tytul">
-    <h1>'.$nazwa.'</h1> 
-    </header>';
+    echo '<header class="tytul"> <h1>'.$nazwa.'</h1> </header>';
 ?>
   
       <h2>Składniki:</h2>
        
 <?php
-    echo $sklad;
+    echo '<div class = "styleSkladniki">'.$sklad.'</div>';
 ?>
       <h2>Przygotowanie:</h2>
 <?php
-    echo $przygotowanie;
+  echo '<div class = "styleSkladniki">'.$przygotowanie.'</div>';
 ?>
       <p id="smacznego">Smacznego!</p>
     </section>  
