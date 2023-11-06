@@ -25,7 +25,10 @@
         }
         else
         {
-            
+            $sqlfirst = "SET NAMES 'utf8'";
+
+            $polaczenie->query($sqlfirst);
+
             $sql = "INSERT INTO przepisy (id, nazwa, kategoria, sklad, przygotowanie, opis, shortopis, img, vegan) VALUES (NULL, '$nazwaPrzepisu', '$rodzajDania', '$skladniki', '$krokPoKroku', '$dlugiOpis', '$krotkiOpis', '$target', '1')";
 
             if($polaczenie->query($sql) === TRUE)
