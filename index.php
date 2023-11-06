@@ -22,39 +22,26 @@
 
   <body>
     
-    <div class = "topBar">
-      
-      <img class = "logo" src="garnek.png">
-      <div class = "dropDown">
-        <button class = "dropButtons">O nas</button>
-        <div class = "dropMenu">
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-        </div>
-      </div>
-
-      <div class = "dropDown">
-        <button class = "dropButtons" id = "kat">Kategorie</button>
-        <div class = "dropMenu">
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-        </div>
-      </div>
-    
-      <div class = "dropDown">
-        <button class = "dropButtons">Kontakt</button>
-        <div class = "dropMenu">
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-        </div>
+  <div class = "topBar">
+    <img class = "logo" src="garnek.png">
+  
+    <div class = "dropDown">
+      <button class = "dropButtons">O nas</button>
+    </div>
+  
+    <div class = "dropDown">
+      <button class = "dropButtons" id = "kat">Kategorie</button>
+      <div class = "dropMenu">
+        <a href = "?kategoria=1" class = "dropDownLink">Danie Główne</a>
+        <a href = "?kategoria=2" class = "dropDownLink">Zupa</a>
+        <a href = "?kategoria=3" class = "dropDownLink">Deser</a>
       </div>
     </div>
+  
+    <div class = "dropDown">
+      <button class = "dropButtons">Kontakt</button>
+    </div>
+  </div>
     
     <div class="headerAndSearch">
       <header class = 'mainHeader'>Garnek.pl</header>
@@ -67,7 +54,7 @@
     <?php
 
         foreach($all as $przepis){
-        echo "<div class = 'przepis' style= 'background-image: url({$przepis['img']}); background-size: 100% 100%; background-repeat: no-repeat;' >";
+        echo "<div class = 'przepis' style= 'background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url({$przepis['img']}); background-size: 100% 100%; background-repeat: no-repeat; ' >";
         echo "<header class = 'nazwaPrzepisu'>{$przepis['nazwa']}</header>";
         echo "<p class = 'opisPrzepisu'>{$przepis['shortopis']}</p>";
         echo '<button class = "sprawdz"><a href="template.php?id='.$przepis['id'].'">Sprawdź</a></button>';

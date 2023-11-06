@@ -17,39 +17,26 @@
   </head>
 
   <body>
-    <div class = "topBar">
-      <img class = "logo" src="garnek.png">
-    
-      <div class = "dropDown">
-        <button class = "dropButtons">O nas</button>
-        <div class = "dropMenu">
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-        </div>
-      </div>
-    
-      <div class = "dropDown">
-        <button class = "dropButtons" id = "kat">Kategorie</button>
-        <div class = "dropMenu">
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-        </div>
-      </div>
-    
-      <div class = "dropDown">
-        <button class = "dropButtons">Kontakt</button>
-        <div class = "dropMenu">
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-          <a href = "#" class = "dropDownLink">information</a>
-        </div>
+  <div class = "topBar">
+    <img class = "logo" src="garnek.png">
+  
+    <div class = "dropDown">
+      <button class = "dropButtons">O nas</button>
+    </div>
+  
+    <div class = "dropDown">
+      <button class = "dropButtons" id = "kat">Kategorie</button>
+      <div class = "dropMenu">
+        <a href = "#" class = "dropDownLink">Danie Główne</a>
+        <a href = "#" class = "dropDownLink">Zupa</a>
+        <a href = "#" class = "dropDownLink">Deser</a>
       </div>
     </div>
+  
+    <div class = "dropDown">
+      <button class = "dropButtons">Kontakt</button>
+    </div>
+  </div>
 
     <form class="formContainer" method="POST" enctype="multipart/form-data" action="addInfo.php">
       <header class = "formHeader">Dodaj swój przepis</header>
@@ -93,7 +80,7 @@
         <label for="kroki">Przepis krok po kroku</label>
       </div>
       <div class="przeslij">
-        <button class = "sprawdz" ><a href = "index.html">Powrót</a></button>
+        <button class = "sprawdz" ><a href = "index.php">Powrót</a></button>
         <button class = "sprawdz" type = "submit" name = "submit" >Prześlij</button>
       </div>
      </form>

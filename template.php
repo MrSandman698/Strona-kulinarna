@@ -48,32 +48,19 @@
   
     <div class = "dropDown">
       <button class = "dropButtons">O nas</button>
-      <div class = "dropMenu">
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
-      </div>
     </div>
   
     <div class = "dropDown">
       <button class = "dropButtons" id = "kat">Kategorie</button>
       <div class = "dropMenu">
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
+        <a href = "#" class = "dropDownLink">Danie Główne</a>
+        <a href = "#" class = "dropDownLink">Zupa</a>
+        <a href = "#" class = "dropDownLink">Deser</a>
       </div>
     </div>
   
     <div class = "dropDown">
       <button class = "dropButtons">Kontakt</button>
-      <div class = "dropMenu">
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
-        <a href = "#" class = "dropDownLink">information</a>
-      </div>
     </div>
   </div>
   
