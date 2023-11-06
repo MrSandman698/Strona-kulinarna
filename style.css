@@ -215,7 +215,7 @@ a{
 }
 
 .sprawdz:hover {
-  background:inherit;
+  background:none;
   color: rgba(2, 218, 110, 0.863);
   border: 2px solid rgba(2, 218, 110, 0.863);
 }
