@@ -1,6 +1,6 @@
 <?php
   session_start();
-		
+  header('Content-Type: text/html; charset=utf-8');
     $id = $_GET['id'];
     
     require_once "connect.php";
@@ -13,6 +13,7 @@
         }
         else 
         {		
+          $polaczenie->set_charset("utf8mb4");
          // echo "SELECT * FROM przepisy WHERE id = $id";		
           @$rezultat = $polaczenie->query(sprintf("SELECT * FROM przepisy WHERE id = $id"));
           $wynik = $rezultat->fetch_assoc();
@@ -37,6 +38,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Gotuj z Bartnikiem</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
