@@ -12,7 +12,7 @@ $pyt = isset($_GET['q']) ? $_GET['q'] : '';
 
 $pyt = $conn->real_escape_string($pyt);
 
-$pyt = "SELECT * FROM przepisy WHERE nazwa LIKE '%$pyt%'";
+$sql = "SELECT * FROM przepisy WHERE nazwa LIKE '%$pyt%'";
 
 $result = $conn->query($sql);
 
