@@ -6,6 +6,12 @@
   font-weight: bold;
 }
 
+
+
+/*        CSS for the form         */
+
+
+
 .formContainer {
   margin: 3rem;
   padding: 1rem;
@@ -25,6 +31,9 @@
 .formContainer:hover{
   transform: scale(1.01);
 }
+
+/*        CSS for submit and return buttons         */
+
 .przeslij {
   width: 100%;
   height: auto;
@@ -39,6 +48,9 @@
   height: 100px;
   margin: 0;
 }
+
+/*       Style for input fields in the form        */
+
 .inputField{
   position: relative;
   
@@ -120,7 +132,7 @@
 
 
 
-/*        css do checkboxa              */
+/*        CSS for checkbox with categories              */
 
 
 
@@ -194,6 +206,12 @@ p.header{
   background: white;
 
 }
+
+
+
+/*      CSS for mobile     */
+
+
 
 
 @media only screen and (max-width: 700px) {

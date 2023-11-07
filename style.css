@@ -10,12 +10,12 @@ body{
 
 
 
-/*   Tutaj CSS do indexu   */
+/*   CSS for index   */
 
 
 
 
-
+/* CSS for the top bar */
 .topBar{
   width: auto;
   height: 140px;
@@ -102,7 +102,7 @@ a{
 }
 
 
-/*   Tutaj CSS do searchbara   */
+/*  CSS for searchbar   */
 
 
 
@@ -127,7 +127,7 @@ a{
 }
 
 
-/*   Tutaj CSS do gridu   */
+/*   CSS for main grid, where recipes are   */
 
 
 
@@ -147,7 +147,7 @@ a{
 
 
 
-/*   Tutaj CSS do kafelka z przepisem   */
+/*    CSS for the design of recipe box on index page   */
 
 
 
@@ -229,21 +229,6 @@ a{
 
 
 
-.indexfooter {
-  margin-bottom: 0;
-  margin-top: 120px;
-  width: auto;
-  height: 80px;
-  background-color: rgba(2, 218, 110, 0.863);
-  box-shadow: 1px 1px 24px 9px rgba(0,0,0,0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 40px;
-  color: white;
-  text-shadow: 6px 4px 5px rgba(23, 23, 24, 1);
-}
 
 
 
@@ -252,11 +237,7 @@ a{
 
 
 
-
-
-
-
-/*   Tutaj CSS do template   */
+/*   CSS for the template   */
 
 
 
@@ -267,6 +248,9 @@ a{
   width: 100%;
   height: 10px;
 }
+
+
+/*    CSS for the main box, beneath the top bar, that contains grid     */
 
 .przepisBox {
   margin: 3rem;
@@ -284,7 +268,7 @@ a{
 
 
 
-
+/*   Style of ingredients and recipe steps   */
 
 .styleSkladniki {
   width: auto;
@@ -296,7 +280,7 @@ a{
 
 
 
-/*   Tutaj CSS do zdjęcia przepisu po prawej   */
+/*   CSS for the picture of the recipe   */
 
 
 
@@ -315,7 +299,7 @@ a{
 
 
 
-/*   Tutaj CSS do całego boxa po lewej   */
+/*   CSS for section, that contains ingredients and recipe steps  */
 
 
 .mainSection{
@@ -349,7 +333,7 @@ a{
 
 
 
-/*   Tutaj CSS do opisu przepisu   */
+/*   CSS for description of the recipe   */
 
 
 .caloscOpisu {
@@ -391,7 +375,7 @@ h2 {
 
 
 
-/*   Tutaj CSS przycisku powrót po prawej   */
+/*   CSS for return button   */
 
 
 .przepisBox .sprawdz {
@@ -413,7 +397,7 @@ h2 {
 
 
 
-/*   Tutaj CSS do telefonu od 1150px i mniej  */
+/*   CSS for mobile size equal or less than 1150px for index */
 
 
 @media only screen and (max-width: 1150px) {
@@ -514,7 +498,7 @@ h2 {
 
 
 
-/*        template         */
+/*        mobile for template         */
 
 
 
