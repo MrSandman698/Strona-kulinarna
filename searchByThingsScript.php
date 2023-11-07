@@ -8,11 +8,12 @@ if(empty($lista))
 else 
 {
   $N = count($lista);
-  $sql = "SELECT * FROM przepisy WHERE '1'='1' "; 
+  $sql = "SELECT * FROM przepisy WHERE '1'='1' ( "; 
   for($i=0; $i < $N; $i++)
   {
-    $sql .= " AND sklad LIKE '%$lista[$i]%' ";
+    $sql .= " OR sklad LIKE '%$lista[$i]%' ";
   }
+  $sql.=" )";
  // echo $sql;
   $name = "";
   if(isset($_COOKIE['w'])){
