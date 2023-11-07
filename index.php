@@ -1,15 +1,22 @@
 <?php
   session_start();
-
+  $name = "";
+  if(isset($_COOKIE['w'])){
+    $name = $_COOKIE['w'];
+  } else if(isset($_GET['nazwa'])){
+    $name = $_GET['nazwa'];
+  } else {
+    unset($name);
+  }
   require_once 'database.php';
-  if(isset($_GET['kategoria']) && isset($_GET['nazwa'])){
+  if(isset($_GET['kategoria']) && isset($name)){
     $temp1 = $_GET['kategoria'];
-    $temp2 = $_GET['nazwa'];
+    $temp2 = $name;
     $got = $db->query("SELECT * FROM przepisy WHERE kategoria='$temp1' AND nazwa LIKE '%$temp2%' ORDER BY id DESC");
   } else if(isset($_GET['kategoria'])){
     $got = $db->query("SELECT * FROM przepisy WHERE kategoria = '".$_GET['kategoria']."' ORDER BY id DESC");
-  } else if(isset($_GET['nazwa'])){
-    $temp = $_GET['nazwa'];
+  } else if(isset($name)){
+    $temp = $name;
     $got = $db->query("SELECT * FROM przepisy WHERE nazwa LIKE '%$temp%'");
   } else {
     $got = $db->query("SELECT * FROM przepisy ORDER BY id DESC");
