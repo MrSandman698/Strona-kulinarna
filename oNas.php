@@ -42,7 +42,7 @@
     <h1 id = "headerONas">O nas</h1>
     <p id = "parONas">
       Jesteśmy zespołem uczniów z II Liceum Ogólnokształcącego w Krakowie. Nasza pasja do gotowania oraz chęć pomocy innym skłoniła nas do stworzenia tej strony.
-      Chcemy dostarczać praktyczne porady, przepisy i wskazówki, które ułatwią wszystkim gotowanie i pozwolą na przygotowywanie pysznych potraw. Naszym celem jest dzielenie się naszą wiedzą i inspiracją kulinarzą, aby każdy mógł cieszyć się smacznymi posiłkami.
+      Chcemy dostarczać praktyczne porady, przepisy i wskazówki, które ułatwią wszystkim gotowanie i pozwolą na przygotowywanie pysznych potraw. Naszym celem jest dzielenie się naszą wiedzą i inspiracją kulinarną, aby każdy mógł cieszyć się smacznymi posiłkami.
       Dzięki naszej stronie, nawet początkujący kucharze będą w stanie przygotować smaczne dania bez stresu i trudności.
     </p>
     <img src = "osoby/numer1.png" id="n1">
