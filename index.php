@@ -43,7 +43,7 @@
    <a class = "logoImg" href="index.php"><img class = "logo" src="garnek.png" ></a>
   
     <div class = "dropDown">
-    <a href = "oNas.php"><button class = "dropButtons">O nas</button></a>
+      <a href = "oNas.php"><button class = "dropButtons">O nas</button></a>
     </div>
   
     <div class = "dropDown">

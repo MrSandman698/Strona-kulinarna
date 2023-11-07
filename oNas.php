@@ -20,7 +20,7 @@
    <a class = "logoImg" href="index.php"><img class = "logo" src="garnek.png" ></a>
   
     <div class = "dropDown">
-      <button class = "dropButtons">O nas</button>
+      <a href = "oNas.php"><button class = "dropButtons">O nas</button></a>
     </div>
   
     <div class = "dropDown">
@@ -33,7 +33,7 @@
     </div>
   
     <div class = "dropDown">
-      <button class = "dropButtons">Kontakt</button>
+      <a href = "oNas.php"><button class = "dropButtons">Kontakt</button></a>
     </div>
   </div>
   <div class="oNasBox">
