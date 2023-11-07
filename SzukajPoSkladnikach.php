@@ -30,6 +30,7 @@
         <a href = "index.php?kategoria=1" class = "dropDownLink">Danie Główne</a>
         <a href = "index.php?kategoria=2" class = "dropDownLink">Zupa</a>
         <a href = "index.php?kategoria=3" class = "dropDownLink">Deser</a>
+        <a href = "SzukajPoSkladnikach.php" class = "dropDownLink">Wyszukaj po składnikach</a>
       </div>
     </div>
   
@@ -38,64 +39,64 @@
     </div>
   </div>
 
-    <form class="formContainer" method="POST" enctype="multipart/form-data" action="addInfo.php">
+    <form class="formContainer" method="POST" action="searchByThingsScript.php">
       
       <div class= "radiobox">
         <p class="header">Składniki jakie masz w domu:</p>
         <div class="checklist">
         <label class="container">makaron
-          <input type="checkbox" id="składnik1" name="składnik" value="makaron">
+          <input type="checkbox" id="składnik1" name="sk[]" value="makaron">
           <span class="checkmark"></span>
         </label><label class="container">jajka
-          <input type="checkbox" id="składnik2" name="składnik" value="jajka">
+          <input type="checkbox" id="składnik2" name="sk[]" value="jajka">
           <span class="checkmark"></span>
         </label>
         <label class="container">cebula
-          <input type="checkbox" id="składnik3" name="składnik" value="cebula">
+          <input type="checkbox" id="składnik3" name="sk[]" value="cebula">
           <span class="checkmark"></span>
         </label>
         <label class="container">pomidor
-          <input type="checkbox" id="składnik4" name="składnik" value="pomidor">
+          <input type="checkbox" id="składnik4" name="sk[]" value="pomidor">
           <span class="checkmark"></span>
         </label>
         <label class="container">marchewka
-          <input type="checkbox" id="składnik5" name="składnik" value="marchewka">
+          <input type="checkbox" id="składnik5" name="sk[]" value="marchewka">
           <span class="checkmark"></span>
         </label>
         <label class="container">pietruszka
-          <input type="checkbox" id="składnik6" name="składnik" value="pietruszka">
+          <input type="checkbox" id="składnik6" name="sk[]" value="pietruszka">
           <span class="checkmark"></span>
         </label>
         <label class="container">kurczak
-          <input type="checkbox" id="składnik7" name="składnik" value="kurczak">
+          <input type="checkbox" id="składnik7" name="sk[]" value="kurczak">
           <span class="checkmark"></span>
         </label>
         <label class="container">schab
-          <input type="checkbox" id="składnik8" name="składnik" value="schab">
+          <input type="checkbox" id="składnik8" name="sk[]" value="schab">
           <span class="checkmark"></span>
         </label>
         <label class="container">baranina
-          <input type="checkbox" id="składnik9" name="składnik" value="baranina">
+          <input type="checkbox" id="składnik9" name="sk[]" value="baranina">
           <span class="checkmark"></span>
         </label>
         <label class="container">czosnek
-          <input type="checkbox" id="składnik10" name="składnik" value="czosnek">
+          <input type="checkbox" id="składnik10" name="sk[]" value="czosnek">
           <span class="checkmark"></span>
         </label>
         <label class="container">sałata
-          <input type="checkbox" id="składnik11" name="składnik" value="sałata">
+          <input type="checkbox" id="składnik11" name="sk[]" value="sałata">
           <span class="checkmark"></span>
         </label>
         <label class="container">ser
-          <input type="checkbox" id="składnik12" name="składnik" value="ser">
+          <input type="checkbox" id="składnik12" name="sk[]" value="ser">
           <span class="checkmark"></span>
         </label>
         <label class="container">ogórek
-          <input type="checkbox" id="składnik13" name="składnik" value="ogórek">
+          <input type="checkbox" id="składnik13" name="sk[]" value="ogórek">
           <span class="checkmark"></span>
         </label>
           <label class="container">burak
-            <input type="checkbox" id="składnik14" name="składnik" value="burak">
+            <input type="checkbox" id="składnik14" name="sk[]" value="burak">
             <span class="checkmark"></span>
           </label>
         </div>
