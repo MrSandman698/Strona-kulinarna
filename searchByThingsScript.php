@@ -69,7 +69,7 @@ else
         <a href = "?kategoria=1" class = "dropDownLink">Danie Główne</a>
         <a href = "?kategoria=2" class = "dropDownLink">Zupa</a>
         <a href = "?kategoria=3" class = "dropDownLink">Deser</a>
-        <a href = "SzukajPoSkladnikach.php" class = "dropDownLink">Wyszukaj po składnikach</a>
+        <a href = "SzukajPoSkladnikach.php" class = "dropDownLink">Szukaj po składnikach</a>
       </div>
     </div>
   
