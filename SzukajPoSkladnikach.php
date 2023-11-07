@@ -39,7 +39,7 @@
     </div>
   </div>
 
-    <form class="formContainer" method="POST" action="searchByThingsScript.php">
+    <form id="otherForm" method="POST" action="searchByThingsScript.php">
       
       <div class= "radiobox">
         <p class="header">Składniki jakie masz w domu:</p>
