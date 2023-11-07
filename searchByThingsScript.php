@@ -48,7 +48,7 @@ else
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
-    <title>Gotuj z Bartnikiem</title>
+    <title>Garnek.pl</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />

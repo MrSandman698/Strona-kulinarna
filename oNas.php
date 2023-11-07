@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
-    <title>Gotuj z Bartnikiem</title>
+    <title>Garnek.pl</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="dodajPrzepisStyle.css" rel="stylesheet" type="text/css" />
     <link href="oNasStyle.css" rel="stylesheet" type="text/css" />
