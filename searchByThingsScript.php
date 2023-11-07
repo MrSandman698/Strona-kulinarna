@@ -8,8 +8,9 @@ if(empty($lista))
 else 
 {
   $N = count($lista);
-  $sql = "SELECT * FROM przepisy WHERE '1'='1' ( "; 
-  for($i=0; $i < $N; $i++)
+  $asd = $lista[0];
+  $sql = "SELECT * FROM przepisy WHERE '1'='1' AND (sklad LIKE '%$asd%' "; 
+  for($i=1; $i < $N; $i++)
   {
     $sql .= " OR sklad LIKE '%$lista[$i]%' ";
   }
