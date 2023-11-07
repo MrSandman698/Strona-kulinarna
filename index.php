@@ -2,9 +2,15 @@
   session_start();
 
   require_once 'database.php';
-
-  if(isset($_GET['kategoria'])){
+  if(isset($_GET['kategoria']) && isset($_GET['nazwa'])){
+    $temp1 = $_GET['kategoria'];
+    $temp2 = $_GET['nazwa'];
+    $got = $db->query("SELECT * FROM przepisy WHERE kategoria='$temp1' AND nazwa LIKE '%$temp2%' ORDER BY id DESC");
+  } else if(isset($_GET['kategoria'])){
     $got = $db->query("SELECT * FROM przepisy WHERE kategoria = '".$_GET['kategoria']."' ORDER BY id DESC");
+  } else if(isset($_GET['nazwa'])){
+    $temp = $_GET['nazwa'];
+    $got = $db->query("SELECT * FROM przepisy WHERE nazwa LIKE '%$temp%'");
   } else {
     $got = $db->query("SELECT * FROM przepisy ORDER BY id DESC");
   }
