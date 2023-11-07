@@ -56,7 +56,7 @@
     </div>
   
     <div class = "dropDown">
-      <a href = "oNas.php"><button class = "dropButtons">Kontakt</button></a>
+      <a href = "dodajPrzepis.php"><button class = "dropButtons">Dodaj Przepis</button></a>
     </div>
   </div>
     
