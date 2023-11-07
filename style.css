@@ -358,7 +358,7 @@ h2 {
   margin-left: 3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 40px;
-  color: rgb(2, 218, 110);
+  color: rgb(2, 210, 106);
   text-shadow: 4px 3px 4px rgb(16, 16, 16);
 }
 .mainSection h2 {
@@ -439,6 +439,7 @@ h2 {
       }
       .mainHeader{
         font-size: 2.5rem;
+        text-shadow: 2px 2px 5px rgba(23, 23, 24, 1);
       }
       .searchbarstyle{
         width: 16rem;
@@ -594,10 +595,12 @@ h2 {
       }
       h2 {
         font-size: 16px;
+        text-shadow: 1px 1px 2px rgba(23, 23, 24, 1);
       }
       .tytul{
         font-size: 16px;
         margin-left: 1rem;
+        text-shadow: 2px 2px 5px rgba(23, 23, 24, 1);
       }
     
       .mainSection .unorderedList{
@@ -623,6 +626,7 @@ h2 {
       #smacznego{
         font-size: 32px;
         margin-left: 1rem;
+        text-shadow: 2px 2px 3px rgba(23, 23, 24, 1);
       }
     }
   }
