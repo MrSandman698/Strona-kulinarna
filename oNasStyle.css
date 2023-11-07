@@ -39,28 +39,28 @@
   text-wrap: wrap;
 }
 #n1 {
-  width: auto;
+  width: 100%;
   height: 100%;
   grid-area: n1;
   margin-left: auto;
   margin-right: auto;
 }
 #n2 {
-  width: auto;
+  width: 100%;
   height: 100%;
   grid-area: n2;
   margin-left: auto;
   margin-right: auto;
 }
 #n3 {
-  width: auto;
+  width: 100%;
   height: 100%;
   grid-area: n3;
   margin-left: auto;
   margin-right: auto;
 }
 #n4 {
-  width: auto;
+  width: 100%;
   height: 100%;
   grid-area: n4;
   margin-left: auto;
@@ -88,6 +88,22 @@
       .oNasBox {
         grid-auto-rows: auto auto 200px;
       }
+      #n1 {
+        width: auto;
+        height: 100%;
+      }
+      #n2 {
+        width: auto;
+        height: 100%;
+      }
+      #n3 {
+        width: auto;
+        height: 100%;
+      }
+      #n4 {
+        width: auto;
+        height: 100%;
+      }
       @media only screen and (max-width: 1200px){
         #logoGarnekCienie{
           display: none;
@@ -105,7 +121,7 @@
           "n4";
         }
         @media only screen and (max-width: 700px){
-         #headerONas {
+          #headerONas {
            font-size: 2rem;
           }
           #parONas {
