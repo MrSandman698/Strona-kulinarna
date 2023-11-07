@@ -1,5 +1,19 @@
 <?php
-  session_start();
+
+$lista = $_POST['sk'];
+if(empty($lista)) 
+{
+    header('Location: index.php');
+} 
+else 
+{
+  $N = count($lista);
+  $sql = "SELECT * FROM przepisy WHERE '1'='1' "; 
+  for($i=0; $i < $N; $i++)
+  {
+    $sql .= " AND sklad LIKE '%$lista[$i]%' ";
+  }
+ // echo $sql;
   $name = "";
   if(isset($_COOKIE['w'])){
     $name = $_COOKIE['w'];
@@ -12,17 +26,18 @@
   if(isset($_GET['kategoria']) && isset($name)){
     $temp1 = $_GET['kategoria'];
     $temp2 = $name;
-    $got = $db->query("SELECT * FROM przepisy WHERE kategoria='$temp1' AND nazwa LIKE '%$temp2%' ORDER BY id DESC");
+    $got = $db->query($sql." AND kategoria='$temp1' AND nazwa LIKE '%$temp2%' ORDER BY id DESC");
   } else if(isset($_GET['kategoria'])){
-    $got = $db->query("SELECT * FROM przepisy WHERE kategoria = '".$_GET['kategoria']."' ORDER BY id DESC");
+    $got = $db->query($sql." AND kategoria = '".$_GET['kategoria']."' ORDER BY id DESC");
   } else if(isset($name)){
     $temp = $name;
-    $got = $db->query("SELECT * FROM przepisy WHERE nazwa LIKE '%$temp%'");
+    $got = $db->query($sql." AND nazwa LIKE '%$temp%'");
   } else {
-    $got = $db->query("SELECT * FROM przepisy ORDER BY id DESC");
+    $got = $db->query($sql);
   }
 	$all = $got->fetchAll();
 
+}
 
 ?>
 <!DOCTYPE html>
@@ -52,7 +67,6 @@
         <a href = "?kategoria=1" class = "dropDownLink">Danie Główne</a>
         <a href = "?kategoria=2" class = "dropDownLink">Zupa</a>
         <a href = "?kategoria=3" class = "dropDownLink">Deser</a>
-        <a href = "SzukajPoSkladnikach.php" class = "dropDownLink">Wyszukaj po składnikach</a>
       </div>
     </div>
   
