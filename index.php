@@ -55,9 +55,7 @@
     
     <div class="headerAndSearch">
       <header class = 'mainHeader'><a href="index.php">Garnek.pl</a></header>
-      <input type="text" id="searchbarstyle" placeholder="Wyszukaj..." oninput="searchRecipes(this.value)">
-      <script src="script.js"></script>
-      <div id="results-container"></div>
+      <input type="text" id="searchbarstyle" placeholder="Wyszukaj...">
     </div>
     
     

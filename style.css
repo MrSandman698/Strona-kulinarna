@@ -115,7 +115,7 @@ a{
   align-items: flex-end;
   margin-bottom: 4rem;
 }
-.searchbarstyle{
+#searchbarstyle{
   font-size: 2rem;
   width: 26rem;
   border-radius: 8px;

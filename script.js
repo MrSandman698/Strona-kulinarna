@@ -1,22 +1,14 @@
-function searchRecipes(query) {
-    if (query.length === 0) {
-      document.getElementById('recipes').innerHTML = "";
-      return;
-    }
-  
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById('recipes').innerHTML = this.responseText;
-        highlightQuery(query);
+document.addEventListener('DOMContentLoaded', (event) => {
+  const inputField = document.getElementById('searchbarstyle');
+
+  if (inputField) {
+    inputField.addEventListener('keyup', (event) => {
+      if (event.key === 'Enter') {
+        var inputValue = inputField.value;
+        console.log(inputValue);
       }
-    };
-    xhttp.open("GET", "get_recipes.php?q=" + query, true);
-    xhttp.send();
+    });
+  } else {
+    console.error("Nie znaleziono elementu z ID 'searchbarstyle'.");
   }
-  
-  function highlightQuery(query) {
-    const searchbar = document.getElementById('searchbar');
-    searchbar.value = searchbar.value.replace(new RegExp(query, 'gi'), (match) => `<span class="highlight">${match}</span>`);
-  }
-  
+});
