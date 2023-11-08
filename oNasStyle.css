@@ -70,18 +70,18 @@
 
 
 
-@media only screen and (max-width: 1900px){
+@media (max-width: 1900px){
   #parONas {
     font-size: 2rem;
   }
-  @media only screen and (max-width: 1665px){
+  @media (max-width: 1665px){
     #headerONas {
       font-size: 4rem;
     }
     #parONas {
       font-size: 1.5rem;
     }
-    @media only screen and (max-width: 1300px){
+    @media (max-width: 1300px){
       #parONas {
         font-size: 1.2rem;
       }
@@ -104,7 +104,7 @@
         width: auto;
         height: 100%;
       }
-      @media only screen and (max-width: 1200px){
+      @media (max-width: 1200px){
         #logoGarnekCienie{
           display: none;
         }
@@ -120,7 +120,7 @@
           "n3"
           "n4";
         }
-        @media only screen and (max-width: 700px){
+        @media (max-width: 700px){
           #headerONas {
            font-size: 2rem;
           }
@@ -138,7 +138,7 @@
             "n3"
             "n4";
          }
-          @media only screen and (max-width: 500px){
+          @media (max-width: 500px){
            #parONas {
              font-size: 0.7rem;
            }
